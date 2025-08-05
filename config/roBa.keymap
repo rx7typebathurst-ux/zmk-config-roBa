@@ -80,13 +80,13 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                  &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G             &kp LS(LG(S))         &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B             &kp COLON             &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
-&mo 4             &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &kp LEFT_CONTROL  &kp INT_MUHENKAN      &kp INT_KANA   &lt 5 SPACE                             &lt 2 ESCAPE
+&kp Q               &kp W         &kp E         &kp R             &kp T                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A               &kp S         &kp D         &kp F             &kp G           &kp LS(LG(S))      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp ENTER
+&mt LEFT_CONTROL Z  &kp X         &kp C         &kp V             &kp B           &kp COLON          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
+&mo 4               &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp INSERT         &kp RIGHT_ALT  &lt 2 SPACE                             &lt 1 ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         FUNCTION {
@@ -120,10 +120,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans     &trans     &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans     &trans     &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans     &trans     &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
